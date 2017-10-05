@@ -77,7 +77,7 @@ model;ereuse;v2-2017-09-20;range.inf;2;;Lower than 2 score points is inferior an
 model;ereuse;v2-2017-09-20;range.components.medium;3,25;;Upper 3,25 points is upper class;
 model;ereuse;v2-2017-09-20;range.components.low;2,5;;;
 model;ereuse;v2-2017-09-20;range.components.inf;2;;;
-model;ereuse;v2-2017-09-20;functionality.ND;-0,3;double;'NA’_ None Defined Score;
+model;ereuse;v2-2017-09-20;functionality.ND;-0,5;double;'NA’_ None Defined Score;
 model;ereuse;v2-2017-09-20;functionality.A;0,45;double;'A': 'A. Everything works perfectly (buttons, and in case of screens there are no scratches)';
 model;ereuse;v2-2017-09-20;functionality.B;-0,5;double;'B': 'B. There is a button difficult to press or a small scratch in an edge of a screen;
 model;ereuse;v2-2017-09-20;functionality.C;-0,75;double;'C': 'C. A non-important button (or similar) doesn\'t work; screen has multiple scratches in edges
