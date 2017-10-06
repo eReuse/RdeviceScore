@@ -56,5 +56,5 @@ Bios;bios;1.0;;
 ;Drive.score;1.0;1;Drive.Score
 ;appearance.score;1.0;1;Appearance.Score
 ;functionality.score;1.0;1;Functionality.Score
-;Score;1.0;1;Score
-;Range;1.0;1;Range
+;Score;1.0;1;Condition.Score
+;Range;1.0;1;Condition
