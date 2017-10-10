@@ -14,3 +14,30 @@ sudo apt-get install libcurl4-gnutls-dev
 
 install.packages("githubinstall")
 
+# Install R
+
+
+https://cran.r-project.org/src/base/R-3/R-3.3.3.tar.gz
+
+cd R-2.15.3/
+
+./configure –enable-R-shlib
+
+#if problems
+./configure –enable-R-shlib –with-readline=no –with-x=no
+
+make clean
+
+make
+
+make install
+
+# ensure installed
+ls /usr/local/bin |grep R
+
+
+
+# install devtools 
+
+apt-get -y build-dep libcurl4-gnutls-dev
+apt-get -y install libcurl4-gnutls-dev
