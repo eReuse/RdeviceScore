@@ -5,25 +5,9 @@ The RdeviceScore algorithm is a logical step-by-step method to solve the problem
 
 ![image](./img/input_process_output.png)
 
-## Introduction 
+## Introduction & application 
 
-Device owners nowadays decide if and when a digital device be comes ewaste, or is still usable for reuse. In a device as a commons model, where devices are collectively owned and managed, we propose to restrict this individual choice in favour of collective choice. This is achieved through external and internal organisational and governance instruments for a commons-based cooperative platform,
-that has developed over the last three years handing more than 700
-computers. As part of that governance, we present the Circular Prod-
-uct License, where the ownership of a device is not linked to the
-first individual user, but resides in a community or organisation
-responsible for safeguarding its reuse, ensuring that a pool of de-
-vices, as a commons, will maximise its lifetime through multiple
-reuse cycles. Each device will only be recycled when the demand and
-reuse potential for it has been exhausted. Another is an algorithm to
-estimate the use value of the devices, such as laptops and desktops.
-The algorithm computes the value of use of the device. When this
-value is too low or has no demand, the community in custody obtains
-the recycling permission, or otherwise another cycle of reuse begins.
-These open source tools, as part of the eReuse.org platform bring
-automation, cost reduction, traceability and auditability in all the
-steps in the lifetime of any device included in the commons, across
-manufacturing, use, reuse, repair, refurbishment and final recycling.
+Device owners nowadays decide if and when a digital device be comes ewaste, or is still usable for reuse but they do not have objective data to make this decision. This algorithm computes the value of use of the device. This algorithm together with the [RdevicePrice](https://github.com/eReuse/Rdeviceprice) allows to estimate a change price for devices. Entities and platforms applying Electronic Reuse Circular License use this algorithm to audit the application of the waste hierarchy. Prevention of waste generation can be avoided if we only recyle when the value of use is too low or has no demand, if it happens the owner or the community in custody obtains the recycling permission, or otherwise another cycle of reuse begins. This open source algoritm, as part of the eReuse.org platform (or used standalone), bring auditability on waste hierachy application, optimization and transparency in pricing. 
 
 ## Algorithm
 
@@ -32,7 +16,7 @@ manufacturing, use, reuse, repair, refurbishment and final recycling.
 The entry contains the main characteristics of a device that are: i) the components it has, such as processor, storage and ram memory, ii) the aesthetics or appearance, which is a categorical variable, now defined subjectively with values such as: “A: The device is new”, “B: really good condition (small visual damage in difficult places to spot)”, “C: good condition (small visual damage in parts that are easy to spot, not on screens)”, etc., (iii) and functionality, another categorical and subjective variable, such as: “A. Everything works perfectly (buttons, and in case screens there are no scratches)”, “B. There is a button difficult to press or a small scratch in an edge of a screen”, etc. At the same time, each component has a set of features such as processor speed, number of processor cores, processor score according to benchmarks, disk size and read/write speeds, or ram size and speed. 
 
 The usage value of a product varies over time, for example, in year 2018 computers that do not have at least one dual core processor and 1 GB of RAM are not suitable for using an operating system and the most common applications. Therefore, the algorithm needs to access
-up-to-date information with reference values for each component to estimate the current value for a device. This information is in the “[Values of characteristics table] (./data/models.csv)).
+up-to-date information with reference values for each component to estimate the current value for a device. This information is in the “[Values of characteristics table] (./data/models.csv)".
 
 This table is calculated periodically on the basis of data from devices in circulation managed by platforms and organisations reporting to the eReuse data pool. For each component, its normal distribution is calculated and the minimum acceptable values are set. The minimum acceptable value is represented by xMin, lower values add up to 0 in the component valuation, and the maximum value per xMax, higher values add up to the maximum allowed by the component.
 
@@ -120,4 +104,6 @@ apt-get -y build-dep libcurl4-gnutls-dev
 apt-get -y install libcurl4-gnutls-dev
 
 
+## Licence
 
+Copyright (c) Electronic Reuse Federation projct under Pangea.org, released under the AGPL licence.
