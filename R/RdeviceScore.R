@@ -3,6 +3,10 @@
 #' Using partially Processor.1.score see comment https://tree.taiga.io/project/ereuseorg/us/6
 #' Values under xMin are set to 0
 #' Changes
+#' TODO
+#' Chack clin value in models.csv (value set is 242 and not 0,242!!)
+#' 
+#' 
 #' v.0.2.0
 #' - Add range, cost.refurbisher, cost.circuit, cost.retailer
 #' - Comments code
