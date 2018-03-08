@@ -1,6 +1,6 @@
 # RdeviceScore
 
-The RdeviceScore algorithm is a logical step-by-step method to solve the problem of estimating the value of use of a desktop and laptop computer equipment in next Figure 6.
+The RdeviceScore algorithm is a logical step-by-step method to solve the problem of estimating the value of use of a desktop and laptop computer equipment in next figure.
 
 
 ![image](./img/input_process_output.png)
@@ -16,7 +16,7 @@ Device owners nowadays decide if and when a digital device be comes ewaste, or i
 The entry contains the main characteristics of a device that are: i) the components it has, such as processor, storage and ram memory, ii) the aesthetics or appearance, which is a categorical variable, now defined subjectively with values such as: “A: The device is new”, “B: really good condition (small visual damage in difficult places to spot)”, “C: good condition (small visual damage in parts that are easy to spot, not on screens)”, etc., (iii) and functionality, another categorical and subjective variable, such as: “A. Everything works perfectly (buttons, and in case screens there are no scratches)”, “B. There is a button difficult to press or a small scratch in an edge of a screen”, etc. At the same time, each component has a set of features such as processor speed, number of processor cores, processor score according to benchmarks, disk size and read/write speeds, or ram size and speed. 
 
 The usage value of a product varies over time, for example, in year 2018 computers that do not have at least one dual core processor and 1 GB of RAM are not suitable for using an operating system and the most common applications. Therefore, the algorithm needs to access
-up-to-date information with reference values for each component to estimate the current value for a device. This information is in the “[Values of characteristics table] (./data/models.csv)".
+up-to-date information with reference values for each component to estimate the current value for a device. This information is in the [Values of characteristics table] (./data/models.csv).
 
 This table is calculated periodically on the basis of data from devices in circulation managed by platforms and organisations reporting to the eReuse data pool. For each component, its normal distribution is calculated and the minimum acceptable values are set. The minimum acceptable value is represented by xMin, lower values add up to 0 in the component valuation, and the maximum value per xMax, higher values add up to the maximum allowed by the component.
 
