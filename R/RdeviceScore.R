@@ -3,44 +3,16 @@
 #' Using partially Processor.1.score see comment https://tree.taiga.io/project/ereuseorg/us/6
 #' Values under xMin are set to 0
 #' Changes
-#' TODO
-#' Chack clin value in models.csv (value set is 242 and not 0,242!!)
-#' 
-#' 
-#' v.0.2.0
-#' - Add range, cost.refurbisher, cost.circuit, cost.retailer
-#' - Comments code
-#' - functions setScore include upgrade parameter
-#' - testing improvements
-#' v.0.2.1
-#' - Appearance added to score, this only applies to the mid and high range
-#' - Functionallity added to score
-#' - Data filtered by type computer
-#' - Filtering to only computers
-#' - Filter result, add selector param in shema: Update schema.csv with columns to select
-#' - Rscript to run in batch mode
-#' TODO
-#' - Filter result, add selector param in shema
-#' - Add costs update and margins
-#' - Reviu initDeviceScoreFiles "files are copyed outside test folder"
-#' Add Constants "processor.weight" ... to model.csv
-#' - Include a new test modifing test 1 version 0
-#' 
-#' - add appearance, functionality to the SCORE
-#' 
-#' 
-#' 
-#' 
-#' 
+#' v.1.1 
+#' (TODO) Check clin value in models.csv (value set is 242 and not 0,242!!)
+#' (TODO) Add new CPU score  https://tree.taiga.io/project/ereuseorg/us/107
+#' (TODO) Add grafic card score. https://tree.taiga.io/project/ereuseorg/us/108
 #' TODO:
 #' -  include in dataSchemaMapping the version of the schema to avoid working with folders 
 #'  - reference tables (grade, manufacturer, score)
-#'  - process esthetics (wait until new json from xavier)
 #'  - input/return json
 #'  - A new function (upgrade) that sets default values for missing components. price, score, rang will change with 
-#'    new values would it has if you added missing components
-#'  - normalize score from 0 to 10
-#'  - add optivcal drive
+#'  - add optical drive
 #'  - add network card
 
 deviceScoreMain <- function(input){
